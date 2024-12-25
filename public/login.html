@@ -1,0 +1,90 @@
+<html><head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="">
+    
+        <link rel="icon" href="">
+    
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+                background-color: #C80F2E;
+            
+            
+        }
+        form {
+            background-color: #FFF;
+            padding: 15px 30px;
+            max-width: 470px;
+            margin: 0 auto;
+            color: #000;
+        }
+        .form-control {
+            margin: 5px 0 10px;
+            font-size: 14px;
+            color: #000;
+            height: 40px;
+            padding: 5px;
+            background-color: #FFF;
+            border: solid 1px #ddd;
+            width: 100%;
+        }
+        button {
+            
+                background: #4d90a7;
+            
+
+            
+                color: #fff;
+            
+
+            border: none;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: block;
+            padding: 0 10px;
+            width: 100%;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .logo {
+            max-width: 90%;
+            max-height: 65px;
+            height: auto;
+            display: block;
+            margin: 0 auto 30px;
+        }
+    </style>
+    <script type="text/javascript" src="/static/js/sync-csrf.js"></script>
+</head>
+<body>
+    
+        <img class="logo" src="/media/themesettings/logo-tactic.png" alt="">
+    
+    <form action="/client/login/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="95CUXXwcLdprFBUP2kwUEWSTLIKJwC66">
+        <input type="hidden" name="next" value="/agent/agencies/">
+
+        
+
+        <label for="id_username">Username:</label>
+        <input type="text" name="username" autocomplete="off" class="text form-control" title="Username" data-aid="field-username" required="" id="id_username">
+        
+
+        <label for="id_password">Password:</label>
+        <input type="password" name="password" autocomplete="off" class="text form-control" title="Password" data-aid="field-password" required="" id="id_password">
+        
+
+        <button type="submit" data-aid="button-login">Login</button>
+    </form>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8f7b9def1f96d2a5',t:'MTczNTE1ODkxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+</body></html>
